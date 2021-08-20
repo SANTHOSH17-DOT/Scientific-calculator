@@ -1,0 +1,158 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    #calculator {
+        width: 70%;
+        max-width: 700px;
+        height: 70vh;
+        min-height: 500px;
+        max-height: 550px;
+        background-color: rgb(170, 243, 243);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        position: relative;
+        box-shadow: 3px 3px 3px rgb(101, 103, 104);
+        border-radius: 5px;
+        user-select: none;
+    }
+    
+    #display {
+        margin: 10px;
+        background-color: white;
+        text-align: right;
+        width: 95%;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        font-size: 3rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5px;
+        align-items: center;
+        border: 4px solid rgb(107, 106, 106);
+        overflow-x: auto;
+        user-select: all;
+    }
+    
+    #sci {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 120px;
+        flex-wrap: wrap;
+        width: 95%;
+        background: rgb(218, 216, 216);
+        border: 1px solid white;
+        font-weight: 800;
+        box-shadow: 2px 2px 1px rgb(102, 132, 134);
+    }
+    
+    #sci>div {
+        text-align: center;
+        padding: 5px;
+        border: 1px solid grey;
+        font-size: 2rem;
+        background-color: white;
+        width: 20%;
+        border-radius: 0;
+        cursor: pointer;
+    }
+    
+    #sci>div:hover {
+        background-color: rgb(233, 244, 248);
+    }
+    
+    #sci>div:active {
+        background-color: rgb(189, 199, 202);
+    }
+    
+    #numTab {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 10px;
+        height: 50%;
+        width: 95%;
+        background-color: rgb(235, 235, 235);
+        box-shadow: 2px 3px 2px rgb(102, 132, 134);
+        font-weight: 800;
+        font-size: 1.7rem;
+    }
+    
+    #numbers {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 70%;
+    }
+    
+    #numbers>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid grey;
+        font-size: 1.5rem;
+        background-color: white;
+    }
+    
+    #numbers>div:hover {
+        background-color: rgb(233, 244, 248);
+        cursor: pointer;
+    }
+    
+    #numbers>div:active {
+        background-color: rgb(189, 199, 202);
+    }
+    
+    #operations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 28%;
+        margin-left: 5px;
+        height: 100%;
+        background-color: rgb(196, 193, 193);
+    }
+    
+    #operations>div {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #operations>div>div {
+        border: 1px solid grey;
+        background-color: white;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    
+    #operations>div>div:hover {
+        background-color: rgb(233, 244, 248);
+        cursor: pointer;
+    }
+    
+    #operations>div>div:active {
+        background-color: rgb(189, 199, 202);
+    }
+    
+    #backspace {
+        color: red;
+    }
